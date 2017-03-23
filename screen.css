@@ -83,8 +83,8 @@ header {
 }
 
 .header-img {
-  background: url(img/vpc5/BannerWEB.jpg) no-repeat;
-  height: 19vw;
+  background: url(img/vpc5/BannerWEB-test.jpg) no-repeat;
+  height: 35vw; /*height: 19vw;*/
   background-size: cover;
   background-position: 5% 5%;
   margin-bottom: 2.5%;
