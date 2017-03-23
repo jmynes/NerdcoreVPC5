@@ -1,0 +1,835 @@
+/*
+==========================================================================
+CSS RESET START 
+==========================================================================
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+ol,ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*
+==========================================================================
+CSS RESET END
+==========================================================================
+*/
+
+/*
+==========================================================================
+GLOBAL STYLES START 
+
+These are styles that are used on most or all pages
+==========================================================================
+*/
+
+body {
+  font-family: 'Droid Sans', sans-serif;
+  background: #eeeeee;
+}
+
+a:link {
+  color: #000;
+}
+
+a:visited {
+  color: #5E5E5E;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-family: 'Permanent Marker', cursive;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-family: 'Permanent Marker', cursive;
+}
+
+/*----start-header----*/
+header {
+  text-shadow: -1px 0 1px rgba(0,0,0,0.59);
+  -webkit-text-shadow: -1px 0 1px rgba(0,0,0,0.59);
+  -moz-text-shadow: -1px 0 1px rgba(0,0,0,0.59);
+  -o-text-shadow: -1px 0 1px rgba(0,0,0,0.59);
+  color: #FFF;
+}
+
+.header-img {
+  background: url(img/cassettealt2-min.jpeg) no-repeat;
+  height: 19vw;
+  background-size: cover;
+  background-position: 5% 5%;
+  margin-bottom: 2.5%;
+}
+/*----end-header----*/
+
+/*----start-wrap-----*/
+.wrap {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/*---start-sub----*/
+.sub {
+  
+}
+
+.sub-left {
+  float: left;
+  width: 64%;
+}
+
+.sub-right-grid {
+  /* width: 194px */;
+  margin: 0 auto 3em;
+}
+
+.sub-right-grid h2{
+  margin-bottom: 0.5em;
+}
+
+.sub-right-grid p {
+  color: #5E5E5E;
+  line-height: 1.7em;
+  font-size: .95em;
+  text-align: center;
+}
+
+.sub-right-grid img {
+  display: inline-block;
+  margin: 1em;
+}
+
+.sub-right-grid img#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside {
+  float: right;
+  width: 33%;
+  text-align: center;
+}
+
+aside a:link {
+  color: #2E2E2E;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+aside a:visited {
+  color: #2E2E2E;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+article h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #2E2E2E;
+}
+
+article p {
+  color: #5E5E5E;
+  line-height: 1.7em;
+  font-size: 1em;
+  margin: .5em 0 1.1em;
+  /* text-align: justify; */
+  margin-bottom: 1em;
+}
+
+section {
+  color: #5E5E5E;
+  line-height: 1.7em;
+  margin: .5em 0 1.1em;
+  /* text-align: justify; */
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+article ul {
+  margin-top: -1.5em;
+  list-style: disc inside;
+  color: #5E5E5E;
+  /* text-align: justify; */
+}
+
+article ol {
+  list-style-position: inside; /* Would have expected this to work, but doesn't seem to. */
+  list-style: decimal;
+  margin-left: 1em;
+}
+
+article li {
+  line-height: 2em;
+}
+
+section h2 {
+  color: #000000;
+  margin-bottom: 2em;
+}
+
+iframe {
+  width: 100%;
+}
+
+iframe#bandcamp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  margin-top: 1em;
+  width: 60%; height: 100%;
+}
+
+.embedly-responsive {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Rating Widget:; http://rating-widget.com/get/rating/jquery/#editor */
+.rw-ui-container {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.asterisks sup {
+  margin-right: 0.5em;
+}
+
+aside li {
+  margin-top: 1em;
+}
+
+section {
+  margin-top: 0.2em;
+}
+
+/* Border colors are approximated from the banner image */
+section#one {
+  border-left : 0.4em solid #C60725; /* Red */
+  padding-left: 0.5em;
+}
+
+section#two {
+  border-left : 0.4em solid #D67630; /* Orange */
+  padding-left: 0.5em;
+}
+
+section#three {
+  border-left : 0.4em solid #D79A1E; /* Yellow */
+  padding-left: 0.5em;
+}
+
+section#four {
+  border-left : 0.4em solid #A7B430; /* Light Green */
+  padding-left: 0.5em;
+}
+
+section#five {
+  border-left : 0.4em solid #7AA02C; /* Medium Green */
+  padding-left: 0.5em;
+}
+
+section#six {
+  border-left : 0.4em solid #217538; /* Dark Green */
+  padding-left: 0.5em;
+}
+
+section#seven {
+  border-left : 0.4em solid #0B4994; /* Blue */
+  padding-left: 0.5em;
+}
+
+/* https://gist.github.com/unruthless/413930 */
+sup {
+  font-weight: 700;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em;
+}
+
+.asterisks ul {
+  list-style: none;
+  margin-top: 0.5em; 
+  line-height: 1em;
+  background-color: #ddd;
+}
+
+/*----start-footer----*/
+footer {
+  border-top: 4px solid #2E2E2E;
+  border-bottom: 4px solid #2E2E2E;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #868686;
+  background: #222426;
+}
+
+footer p, footer a:link, footer a:visited {
+  color: white;
+  vertical-align: middle;
+}
+
+footer img {
+  height: 1em;
+  vertical-align: middle;
+}
+
+.footerWrap {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer-right {
+  float: right;
+}
+
+
+/*----//End-footer----*/
+
+/*---end-sub----*/
+/*----end-wrap-----*/
+
+/*
+==========================================================================
+GLOBAL STYLES END
+
+These are styles that are used on most or all pages
+==========================================================================
+*/
+
+/*
+==========================================================================
+ROUND SPECIFIC STYLES START 
+
+These are styles that are used on round pages
+==========================================================================
+*/
+
+h3#heading {
+  margin-bottom: 1em;
+}
+
+/*
+==========================================================================
+ROUND SPECIFIC STYLES END
+
+These are styles that are used on round pages
+==========================================================================
+*/
+
+
+/*
+==========================================================================
+JUDGES SPECIFIC STYLES START 
+
+These are styles that are used on judges.html
+==========================================================================
+*/
+
+.judges article h1 {
+  margin-bottom: 0.5em;
+}
+
+.judges h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em; /* Fix for some (global?) style  */
+  
+  /* For border */
+  /* 
+  padding-bottom: 0.3em;
+  border-style: solid;
+  border-bottom: thin solid #5E5E5E;
+  */
+}
+
+.judges section img {
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.judges article a:visited {
+  color: #000000;
+}
+
+/*
+==========================================================================
+JUDGES SPECIFIC STYLES END
+
+These are styles that are used on judges.html
+==========================================================================
+*/
+
+/*
+==========================================================================
+ADMINS SPECIFIC STYLES START 
+
+These are styles that are used on credits.html
+==========================================================================
+*/
+
+.admins article h1 {
+  margin-bottom: 0.5em;
+}
+
+.admins h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em; /* Fix for some (global?) style  */
+  
+  /* For border */
+  /* 
+  padding-bottom: 0.3em;
+  border-style: solid;
+  border-bottom: thin solid #5E5E5E;
+  */
+}
+
+.admins section img {
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.admins article a:visited {
+  color: #000000;
+}
+
+.admins img#QR {
+  display: block;
+  width: 30%;
+  margin-top: 1em;
+}
+
+/*
+==========================================================================
+ADMINS SPECIFIC STYLES END 
+
+These are styles that are used on credits.html
+==========================================================================
+*/
+
+/*
+==========================================================================
+TEAMS SPECIFIC STYLES START 
+
+These are styles that are used on credits.html
+==========================================================================
+*/
+
+.teams article h1 {
+  margin-bottom: 0.5em;
+}
+
+.teams h2 {
+  font-size: 2em;
+  margin-bottom: 1em; /* Fix for some (global?) style  */
+}
+
+.teams section img {
+  float: left;
+  margin-right: 2em;
+}
+
+/*
+==========================================================================
+TEAMS SPECIFIC STYLES END 
+
+These are styles that are used on credits.html
+==========================================================================
+*/
+
+/*
+==========================================================================
+CREDITS SPECIFIC STYLES END 
+
+These are styles that are used on credits.html
+==========================================================================
+*/
+
+
+/*
+==========================================================================
+FAQ SPECIFIC STYLES START 
+
+These are styles that are used on faq.html
+==========================================================================
+*/
+
+.faq h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.faq article h1 {
+  margin-bottom: 0.5em;
+}
+
+/*
+==========================================================================
+FAQ SPECIFIC STYLES END
+
+These are styles that are used on faq.html
+==========================================================================
+*/
+
+/*
+==========================================================================
+RULES SPECIFIC STYLES START 
+
+These are styles that are used on rules.html
+==========================================================================
+*/
+
+.rules article h1 {
+  margin-bottom: 0.5em;
+}
+
+.rules h2 {
+  font-size: 1.8em;
+   
+  /* For border */
+  /* 
+  padding-bottom: 0.3em;
+  border-style: solid;
+  border-bottom: thin solid #5E5E5E;
+  */
+}
+
+.rules section {
+  /* background-color: #CCC; */
+}
+
+/*
+==========================================================================
+RULES SPECIFIC STYLES END
+
+These are styles that are used on rules.html
+==========================================================================
+*/
+
+/*
+==========================================================================
+MEDIA QUERIES START
+
+For a responsive web page
+
+Note: Redesigning this to not work based on px might be smart.
+==========================================================================
+*/
+
+@media only screen and (max-width: 1440px) and (min-width: 1366px) {
+  .wrap {
+    width: 78%;
+  }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+  .wrap {
+    width: 80%;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 0.01em;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .wrap {
+    width: 80%;
+  }
+
+  article p {
+    line-height: 1.5em;
+  }
+
+  section {
+    line-height: 1.5em;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 0.35em;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+
+  article p {
+    line-height: 1.5em;
+  }
+
+  section p {
+    line-height: 1.5em;
+  }
+
+  .sub-left {
+    width: 54%;
+  }
+
+  aside {
+    width: 44%;
+    margin-top: 7%;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 0.05em;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 640px) {
+  .wrap {
+    width: 90%;
+  }
+
+  article p {
+    line-height: 1.5em;
+  }
+
+  section {
+    line-height: 1.5em;
+  }
+
+  .sub-left {
+    float: none;
+    width: 100%;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+  }
+
+  .judges section img, .team section img { /* Mobile full-size image */
+    width: 100%;
+  }
+
+  .judges iframe#bandcamp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin-top: 1em;
+    width: 100%; height: 100%;
+  }
+
+  .judges .embedly-responsive {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 0.35em;
+  }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 480px) {
+  .wrap {
+    width: 90%;
+  }
+
+  article p {
+    line-height: 1.5em;
+  }
+
+  section {
+    line-height: 1.5em;
+  }
+
+  .sub-left {
+    float: none;
+    width: 100%;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+  }
+
+  .judges section img, .team section img { /* Mobile full-size image */
+    width: 100%;
+  }
+
+  .judges iframe#bandcamp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin-top: 1em;
+    width: 100%; height: 100%;
+  }
+
+  .judges .embedly-responsive {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .wrap {
+    width: 90%;
+  }
+
+  article p {
+    line-height: 1.5em;
+    font-size: .875em;
+  }
+
+  section {
+    line-height: 1.5em;
+    font-size: .875em;
+  }
+
+  article h3 {
+    font-size: 1.2em;
+  }
+
+  .sub-left {
+    float: none;
+    width: 100%;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+  }
+
+  .judges section img, .team section img { /* Mobile full-size image */
+    width: 100%;
+  }
+
+  .judges iframe#bandcamp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin-top: 1em;
+    width: 100%; height: 100%;
+  }
+
+  .judges .embedly-responsive {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 1.45em;
+  }
+}
+
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  .wrap {
+    width: 90%;
+  }
+
+  article p {
+    line-height: 1.5em;
+    font-size: .875em;
+  }
+
+  section {
+    line-height: 1.5em;
+    font-size: .875em;
+  }
+
+  article h3 {
+    font-size: 1.05em;
+  }
+
+  .sub {
+    margin-top: 1em;
+  }
+
+  .sub-left {
+    float: none;
+    width: 100%;
+  }
+
+  aside {
+    float: none;
+    width: 100%;
+  }
+
+  .judges section img, .team section img { /* Mobile full-size image */
+    width: 100%;
+  }
+
+  .judges iframe#bandcamp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin-top: 1em;
+    width: 100%; height: 100%;
+  }
+
+  .judges .embedly-responsive {
+    position: relative;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .teams section { /* Hacky fix for sidebar quirk on this page */
+    padding-bottom: 1.4em;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+/*
+==========================================================================
+MEDIA QUERIES END
+
+For a responsive web page
+==========================================================================
+*/
