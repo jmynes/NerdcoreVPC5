@@ -84,10 +84,12 @@ header {
 
 .header-img {
   background: url(img/vpc5/BannerWEB-test.jpg) no-repeat;
-  height: 35vw; /*height: 19vw;*/
+  height: 20vw; /*height: 19vw;*/
   background-size: cover;
   background-position: 5% 5%;
   margin-bottom: 2.5%;
+  width: 60%;
+  margin-left: 20%;
 }
 /*----end-header----*/
 
@@ -660,6 +662,12 @@ Note: Redesigning this to not work based on px might be smart.
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 0.35em;
   }
+
+  .header-img {
+    height: 35vw; /*height: 19vw;*/
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
 @media only screen and (max-width: 640px) and (min-width: 480px) {
@@ -707,6 +715,12 @@ Note: Redesigning this to not work based on px might be smart.
 
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 0.5em;
+  }
+
+  .header-img {
+    height: 35vw; /*height: 19vw;*/
+    width: 100%;
+    margin-left: 0%;
   }
 }
 
@@ -761,6 +775,12 @@ Note: Redesigning this to not work based on px might be smart.
 
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 1.45em;
+  }
+
+  .header-img {
+    height: 35vw; /*height: 19vw;*/
+    width: 100%;
+    margin-left: 0%;
   }
 }
 
@@ -819,6 +839,12 @@ Note: Redesigning this to not work based on px might be smart.
 
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 1.4em;
+  }
+
+  .header-img {
+    height: 35vw; /*height: 19vw;*/
+    width: 100%;
+    margin-left: 0%;
   }
 }
 
