@@ -556,7 +556,8 @@ Note: Redesigning this to not work based on px might be smart.
 ==========================================================================
 */
 
-@media only screen and (max-width: 1440px) and (min-width: 1366px) {
+
+@media screen and (max-width: 85em) {
   .wrap {
     width: 78%;
   }
@@ -566,7 +567,19 @@ Note: Redesigning this to not work based on px might be smart.
   }
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 1280px) {
+/*
+@media only screen and (max-width: 1440px) and (min-width: 1366px) {
+  .wrap {
+    width: 78%;
+  }
+
+  nav {
+    display: none;
+  }
+}
+*/
+
+@media screen and (max-width: 75em) {
   .wrap {
     width: 80%;
   }
@@ -574,16 +587,9 @@ Note: Redesigning this to not work based on px might be smart.
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 0.01em;
   }
-
-  nav {
-    display: none;
-  }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  .wrap {
-    width: 80%;
-  }
+@media screen and (max-width: 60em) {
 
   article p {
     line-height: 1.5em;
@@ -602,17 +608,9 @@ Note: Redesigning this to not work based on px might be smart.
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 55em) {
   .wrap {
     width: 85%;
-  }
-
-  article p {
-    line-height: 1.5em;
-  }
-
-  section p {
-    line-height: 1.5em;
   }
 
   .sub-left {
@@ -627,23 +625,11 @@ Note: Redesigning this to not work based on px might be smart.
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 0.05em;
   }
-
-  nav {
-    display: none;
-  }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 640px) {
+@media only screen and (max-width: 50em) {
   .wrap {
     width: 90%;
-  }
-
-  article p {
-    line-height: 1.5em;
-  }
-
-  section {
-    line-height: 1.5em;
   }
 
   .sub-left {
@@ -759,136 +745,13 @@ Note: Redesigning this to not work based on px might be smart.
   }
 }
 
-@media only screen and (max-width: 640px) and (min-width: 480px) {
-  .wrap {
-    width: 90%;
-  }
-
-  article p {
-    line-height: 1.5em;
-  }
-
-  section {
-    line-height: 1.5em;
-  }
-
-  .sub-left {
-    float: none;
-    width: 100%;
-  }
-
-  aside {
-    float: none;
-    width: 100%;
-  }
-
-  .judges section img, .team section img { /* Mobile full-size image */
-    width: 100%;
-  }
-
-  .judges iframe#bandcamp {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    margin-top: 1em;
-    width: 100%; height: 100%;
-  }
-
-  .judges .embedly-responsive {
-    position: relative;
-    padding-bottom: 100%;
-    height: 0;
-    overflow: hidden;
-  }
-
+@media only screen and (max-width: 30em) {
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 0.5em;
-  }
-
-  .header-img {
-    height: 35vw; /*height: 19vw;*/
-    width: 100%;
-    margin-left: 0%;
-  }
-
-  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
-
-  /*Strip the ul of padding and list styling*/
-  nav ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    position: absolute;
-  }
-
-  /*Create a horizontal list with spacing*/
-  nav li {
-    display:inline-block;
-    float: left;
-    margin-right: 1px;
-  }
-
-  /*Style for menu links*/
-  nav li a {
-    display:block;
-    min-width:140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #6CD2E1;
-    text-decoration: none;
-  }
-
-  /*Hover state for top level links*/
-  nav li:hover a {
-    background: #19c589;
-  }
-
-  /*Style for dropdown links*/
-  nav li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  /*Hover state for dropdown links*/
-  nav li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
-  }
-
-  /*Hide dropdown links until they are needed*/
-  nav li ul {
-    display: none;
-  }
-
-  /*Make dropdown links vertical*/
-  nav li ul li {
-    display: block;
-    float: none;
-  }
-
-  /*Prevent text wrapping*/
-  nav li ul li a {
-    width: auto;
-    min-width: 100px;
-    padding: 0 20px;
-  }
-
-  /*Display the dropdown on hover*/
-  nav ul li a:hover + .hidden, .hidden:hover {
-    display: block;
   }
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-  .wrap {
-    width: 90%;
-  }
 
   article p {
     line-height: 1.5em;
@@ -906,36 +769,6 @@ Note: Redesigning this to not work based on px might be smart.
 
   article h3 {
     font-size: 1.2em;
-  }
-
-  .sub-left {
-    float: none;
-    width: 100%;
-  }
-
-  aside {
-    float: none;
-    width: 100%;
-  }
-
-  .judges section img, .team section img { /* Mobile full-size image */
-    width: 100%;
-  }
-
-  .judges iframe#bandcamp {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    margin-top: 1em;
-    width: 100%; height: 100%;
-  }
-
-  .judges .embedly-responsive {
-    position: relative;
-    padding-bottom: 100%;
-    height: 0;
-    overflow: hidden;
   }
 
   .teams section { /* Hacky fix for sidebar quirk on this page */
@@ -947,94 +780,9 @@ Note: Redesigning this to not work based on px might be smart.
     width: 100%;
     margin-left: 0%;
   }
-
-  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
-
-  /*Strip the ul of padding and list styling*/
-  nav ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    position: absolute;
-  }
-
-  /*Create a horizontal list with spacing*/
-  nav li {
-    display:inline-block;
-    float: left;
-    margin-right: 1px;
-  }
-
-  /*Style for menu links*/
-  nav li a {
-    display:block;
-    min-width:140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #6CD2E1;
-    text-decoration: none;
-  }
-
-  /*Hover state for top level links*/
-  nav li:hover a {
-    background: #19c589;
-  }
-
-  /*Style for dropdown links*/
-  nav li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  /*Hover state for dropdown links*/
-  nav li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
-  }
-
-  /*Hide dropdown links until they are needed*/
-  nav li ul {
-    display: none;
-  }
-
-  /*Make dropdown links vertical*/
-  nav li ul li {
-    display: block;
-    float: none;
-  }
-
-  /*Prevent text wrapping*/
-  nav li ul li a {
-    width: auto;
-    min-width: 100px;
-    padding: 0 20px;
-  }
-
-  /*Display the dropdown on hover*/
-  nav ul li a:hover + .hidden, .hidden:hover {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 320px) and (min-width: 240px) {
-  .wrap {
-    width: 90%;
-  }
-
-  article p {
-    line-height: 1.5em;
-    font-size: 1em;
-  }
-
-  section {
-    line-height: 1.5em;
-    font-size: .875em;
-  }
 
   article h1 {
     font-size: 2.5em;
@@ -1042,10 +790,6 @@ Note: Redesigning this to not work based on px might be smart.
 
   article h2 {
     font-size: 2em;
-  }
-
-  article h3 {
-    font-size: 1.2em;
   }
 
   .sub {
@@ -1090,78 +834,6 @@ Note: Redesigning this to not work based on px might be smart.
     height: 35vw; /*height: 19vw;*/
     width: 100%;
     margin-left: 0%;
-  }
-
-  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
-
-  /*Strip the ul of padding and list styling*/
-  nav ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
-    position: absolute;
-  }
-
-  /*Create a horizontal list with spacing*/
-  nav li {
-    display:inline-block;
-    float: left;
-    margin-right: 1px;
-  }
-
-  /*Style for menu links*/
-  nav li a {
-    display:block;
-    min-width:140px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    background: #6CD2E1;
-    text-decoration: none;
-  }
-
-  /*Hover state for top level links*/
-  nav li:hover a {
-    background: #19c589;
-  }
-
-  /*Style for dropdown links*/
-  nav li:hover ul a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-  }
-
-  /*Hover state for dropdown links*/
-  nav li:hover ul a:hover {
-    background: #19c589;
-    color: #fff;
-  }
-
-  /*Hide dropdown links until they are needed*/
-  nav li ul {
-    display: none;
-  }
-
-  /*Make dropdown links vertical*/
-  nav li ul li {
-    display: block;
-    float: none;
-  }
-
-  /*Prevent text wrapping*/
-  nav li ul li a {
-    width: auto;
-    min-width: 100px;
-    padding: 0 20px;
-  }
-
-  /*Display the dropdown on hover*/
-  nav ul li a:hover + .hidden, .hidden:hover {
-    display: block;
   }
 }
 
