@@ -671,10 +671,12 @@ Note: Redesigning this to not work based on px might be smart.
 
   /*Strip the ul of padding and list styling*/
   nav.menu ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: absolute;
+    width: 100%;
   }
 
   /*Create a horizontal list with spacing*/
@@ -682,12 +684,16 @@ Note: Redesigning this to not work based on px might be smart.
     display: inline-block;
     float: left;
     margin-right: 1px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 calc(25% - 1px);
+    -ms-flex: 0 0 calc(25% - 1px);
+    flex: 0 0 calc(25% - 1px);
+    max-width: calc(25% - 1px);
   }
 
   /*Style for menu links*/
   nav.menu li a {
     display: block;
-    min-width: 7em;
     height: 3em;
     text-align: center;
     line-height: 3em;
