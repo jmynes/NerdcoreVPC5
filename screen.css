@@ -743,6 +743,7 @@ Note: Redesigning this to not work based on px might be smart.
   /*Display the dropdown on hover*/
   nav.menu ul li a:hover + .hidden, .hidden:hover {
     display: block;
+    max-width: 25%;
   }
 }
 
