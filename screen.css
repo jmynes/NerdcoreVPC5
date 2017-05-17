@@ -731,6 +731,11 @@ Note: Redesigning this to not work based on px might be smart.
   nav.menu li ul li {
     display: block;
     float: none;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 calc(100% - 1px);
+    -ms-flex: 0 0 calc(100% - 1px);
+    flex: 0 0 calc(100% - 1px);
+    max-width: calc(100% - 1px);
   }
 
   /*Prevent text wrapping*/
