@@ -560,6 +560,10 @@ Note: Redesigning this to not work based on px might be smart.
   .wrap {
     width: 78%;
   }
+
+  nav {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 1280px) {
@@ -569,6 +573,10 @@ Note: Redesigning this to not work based on px might be smart.
 
   .teams section { /* Hacky fix for sidebar quirk on this page */
     padding-bottom: 0.01em;
+  }
+
+  nav {
+    display: none;
   }
 }
 
@@ -678,8 +686,7 @@ Note: Redesigning this to not work based on px might be smart.
     margin-left: 0%;
   }
 
-
-
+  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
 
   /*Strip the ul of padding and list styling*/
   nav ul {
@@ -750,9 +757,6 @@ Note: Redesigning this to not work based on px might be smart.
   nav ul li a:hover + .hidden, .hidden:hover {
     display: block;
   }
-
-
-
 }
 
 @media only screen and (max-width: 640px) and (min-width: 480px) {
@@ -808,8 +812,7 @@ Note: Redesigning this to not work based on px might be smart.
     margin-left: 0%;
   }
 
-
-
+  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
 
   /*Strip the ul of padding and list styling*/
   nav ul {
@@ -880,9 +883,6 @@ Note: Redesigning this to not work based on px might be smart.
   nav ul li a:hover + .hidden, .hidden:hover {
     display: block;
   }
-
-
-
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
@@ -948,9 +948,7 @@ Note: Redesigning this to not work based on px might be smart.
     margin-left: 0%;
   }
 
-
-
-
+  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
 
   /*Strip the ul of padding and list styling*/
   nav ul {
@@ -1021,9 +1019,6 @@ Note: Redesigning this to not work based on px might be smart.
   nav ul li a:hover + .hidden, .hidden:hover {
     display: block;
   }
-
-
-
 }
 
 @media only screen and (max-width: 320px) and (min-width: 240px) {
@@ -1097,9 +1092,7 @@ Note: Redesigning this to not work based on px might be smart.
     margin-left: 0%;
   }
 
-
-
-
+  /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
 
   /*Strip the ul of padding and list styling*/
   nav ul {
@@ -1170,9 +1163,6 @@ Note: Redesigning this to not work based on px might be smart.
   nav ul li a:hover + .hidden, .hidden:hover {
     display: block;
   }
-
-
-
 }
 
 .clear {
