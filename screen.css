@@ -246,37 +246,37 @@ section {
 
 /* Border colors are approximated from the banner image */
 section#one {
-  border-left : 0.4em solid #C60725; /* Red */
+  border-left : 0.4em solid #7A2B66; /* Dark Magenta */
   padding-left: 0.5em;
 }
 
 section#two {
-  border-left : 0.4em solid #D67630; /* Orange */
+  border-left : 0.4em solid #D257AA; /* Light Magenta */
   padding-left: 0.5em;
 }
 
 section#three {
-  border-left : 0.4em solid #D79A1E; /* Yellow */
+  border-left : 0.4em solid #458791; /* Namek Green */
   padding-left: 0.5em;
 }
 
 section#four {
-  border-left : 0.4em solid #A7B430; /* Light Green */
+  border-left : 0.4em solid #4E87C9; /* Shirt Blue */
   padding-left: 0.5em;
 }
 
 section#five {
-  border-left : 0.4em solid #7AA02C; /* Medium Green */
+  border-left : 0.4em solid #7BB2F2; /* Sky Blue */
   padding-left: 0.5em;
 }
 
 section#six {
-  border-left : 0.4em solid #217538; /* Dark Green */
+  border-left : 0.4em solid #6CD2E1; /* Cyan */
   padding-left: 0.5em;
 }
 
 section#seven {
-  border-left : 0.4em solid #0B4994; /* Blue */
+  border-left : 0.4em solid #E0D489; /* Hand Gold */
   padding-left: 0.5em;
 }
 
