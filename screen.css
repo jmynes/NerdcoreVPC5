@@ -160,6 +160,14 @@ aside a:visited {
   text-decoration: none;
 }
 
+aside a:link#current {
+  text-decoration: underline;
+}
+
+aside a:visited#current {
+  text-decoration: underline;
+}
+
 article h3 {
   font-size: 1.5em;
   font-weight: 700;
