@@ -162,10 +162,12 @@ aside a:visited {
 
 aside a:link#current {
   text-decoration: underline;
+  color: #5E5E5E;
 }
 
 aside a:visited#current {
   text-decoration: underline;
+  color: #5E5E5E;
 }
 
 article h3 {
