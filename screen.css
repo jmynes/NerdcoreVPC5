@@ -42,7 +42,7 @@ These are styles that are used on most or all pages
 
 body {
   font-family: 'Droid Sans', sans-serif;
-  background: #eeeeee;
+  background: #EEEEEE;
 }
 
 a:link {
@@ -180,7 +180,7 @@ article h3 {
 }
 
 article p {
-  color: #5E5E5E;
+  /* color: #5E5E5E; */
   line-height: 1.7em;
   font-size: 1em;
   margin: .5em 0 1.1em;
@@ -189,7 +189,7 @@ article p {
 }
 
 section {
-  color: #5E5E5E;
+  /*color: #5E5E5E;*/
   line-height: 1.7em;
   margin: .5em 0 1.1em;
   /* text-align: justify; */
